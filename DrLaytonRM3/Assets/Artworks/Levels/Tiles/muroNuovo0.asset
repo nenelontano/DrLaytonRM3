@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: pav0
+  m_Name: muroNuovo0
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 1287670708, guid: faca20ca047bc2143a7db390154505be, type: 3}
-  m_Color: {r: 0.7830189, g: 0.67738754, b: 0.58110833, a: 1}
+  m_Sprite: {fileID: -664011192, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
     e01: 0

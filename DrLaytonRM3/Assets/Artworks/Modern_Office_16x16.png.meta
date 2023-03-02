@@ -830,6 +830,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: bordo
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 780
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4222a7dc7c31104f8ba349e5ea32b02
+      internalID: -498351063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bordo2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 413
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33429a4dd3e7f844cb57010cddc5424a
+      internalID: 544105691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scala0
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 571
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d1f5e3a4a9cc04691d6c785ddd761d
+      internalID: 684148988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pianta0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 667
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0ff0a80c0efce4ba255eed446b1b86
+      internalID: -710800814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -850,18 +934,22 @@ TextureImporter:
       fontana0: -367719849
       muro1: 893521865
       muro12: 1292404358
+      bordo2: 544105691
       lampada0: 2011881017
+      bordo: -498351063
       murp2: 1557083461
       muro5: -1343687408
       muro0: 1051147960
       muro6: 1043026100
       pav1: 567983955
+      pianta0: -710800814
       scrivania_1: -1557844927
       Modern_Office_16x16_1: -789148053
       lampada1: 1777598519
       muro_0: -718558375
       pav3: -43808891
       Modern_Office_16x16_0: -973420761
+      scala0: 684148988
       fontana3: 303673129
       scriv_0: 686064398
       scriv_1.3 giusto: -1352344743
