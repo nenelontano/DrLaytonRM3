@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -117,11 +117,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pavimento_0
+      name: computer0
       rect:
         serializedVersion: 2
-        x: 236
-        y: 239
+        x: 208
+        y: 584
         width: 16
         height: 16
       alignment: 0
@@ -306,15 +306,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scriv_0
+      name: scrivania_0
       rect:
         serializedVersion: 2
-        x: 100
-        y: 475
-        width: 12
+        x: 202
+        y: 452
+        width: 16
         height: 16
-      alignment: 9
-      pivot: {x: 0.050155163, y: -7.8749275}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -747,11 +747,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scrivania_1
+      name: scrivania1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 475
+        x: 202
+        y: 468
         width: 16
         height: 16
       alignment: 0
@@ -768,13 +768,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Modern_Office_16x16_1
+      name: scrivania3
       rect:
         serializedVersion: 2
-        x: 149
-        y: 463
-        width: 38
-        height: 2
+        x: 218
+        y: 452
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -789,12 +789,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: scriv3
+      name: scrivania2
       rect:
         serializedVersion: 2
-        x: 112
-        y: 475
-        width: 13
+        x: 202
+        y: 484
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -902,7 +902,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -910,6 +910,279 @@ TextureImporter:
       bones: []
       spriteID: df0ff0a80c0efce4ba255eed446b1b86
       internalID: -710800814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quadro0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 639
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 418e625b2703ef844aa2c151832b24dd
+      internalID: -1589892950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quadro1
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 639
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0228418f19d814e49a90d50aa9e72289
+      internalID: -1984533282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quadro2
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 623
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4c39d1e040c98d4381dd53e57fa013c
+      internalID: 1516594096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: quadro3
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 623
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af17dbd445a8c341b241331bc694727
+      internalID: -532990654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobile0
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 634
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b78671a06f23fe64690158c2c905a971
+      internalID: -1222316709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobile1
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 634
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04032af39ecef6443894cb1e8786e22e
+      internalID: -279940890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobile2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 618
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba1dedcf12dcca4b80ba563c4dcae0c
+      internalID: -1009014137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mobile3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 618
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8579478b7efc8c4eb23ae4328a442ab
+      internalID: -429289917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scrivania4
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9151bb9fff1907d4eae74f68457a26f5
+      internalID: -795323144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: scrivania5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fc0427908c6ac408d9ef40dd390da8
+      internalID: -489033986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: computer1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 600
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d4202c42a4cec74fa1fe6a40cb93774
+      internalID: -1384003068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sedia0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 660
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee6034546c202ea4ca8d357b16681474
+      internalID: 603980397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sedia1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 676
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e17c59622a9d641b45d9dbe91731ce
+      internalID: -175844208
       vertices: []
       indices: 
       edges: []
@@ -925,43 +1198,56 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      muro15: -908714461
       Modern_Office_16x16_2: -591422494
       muro14: -420026690
-      muro10: -286012558
-      scriv3: -2134617367
-      muro13: 1374967407
-      fontana0: -367719849
+      scrivania2: -2134617367
       muro1: 893521865
+      quadro2: 1516594096
+      scala0: 684148988
+      murp2: 1557083461
+      muro0: 1051147960
+      muro6: 1043026100
+      pianta0: -710800814
+      quadro3: -532990654
+      mobile1: -279940890
+      muro_0: -718558375
+      computer0: 608455973
+      computer1: -1384003068
+      muro3: 1786714540
+      muro9: -1061209170
+      muro16: -599480529
+      fontana1: 1610563907
+      muro15: -908714461
+      muro10: -286012558
+      muro13: 1374967407
+      quadro0: -1589892950
+      fontana0: -367719849
       muro12: 1292404358
+      mobile0: -1222316709
       bordo2: 544105691
       lampada0: 2011881017
       bordo: -498351063
-      murp2: 1557083461
+      sedia0: 603980397
       muro5: -1343687408
-      muro0: 1051147960
-      muro6: 1043026100
       pav1: 567983955
-      pianta0: -710800814
-      scrivania_1: -1557844927
-      Modern_Office_16x16_1: -789148053
+      scrivania5: -489033986
       lampada1: 1777598519
-      muro_0: -718558375
       pav3: -43808891
       Modern_Office_16x16_0: -973420761
-      scala0: 684148988
+      scrivania_0: 686064398
       fontana3: 303673129
-      scriv_0: 686064398
+      scrivania1: -1557844927
       scriv_1.3 giusto: -1352344743
+      sedia1: -175844208
       muro8: 2143871442
+      mobile2: -1009014137
+      mobile3: -429289917
       pav0: 1287670708
-      muro3: 1786714540
-      muro9: -1061209170
+      scrivania3: -789148053
       muro11: -1179305032
-      muro16: -599480529
+      scrivania4: -795323144
       pav2: 588669881
-      fontana1: 1610563907
-      pavimento_0: 608455973
+      quadro1: -1984533282
       fontana2: -2070506882
   spritePackingTag: 
   pSDRemoveMatte: 0
