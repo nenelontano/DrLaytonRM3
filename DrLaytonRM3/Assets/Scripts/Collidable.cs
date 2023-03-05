@@ -20,11 +20,15 @@ public class Collidable : MonoBehaviour {
             if(hits[i]==null)
                 continue;
             
-            Debug.Log(hits[i].name);
+            OnCollide(hits[i]);
 
             //puliamo l'array
             hits[i]=null;
         }
+    }
+
+    protected virtual void OnCollide(Collider2D coll) {
+        Debug.Log(coll.name);
     }
 
 }
