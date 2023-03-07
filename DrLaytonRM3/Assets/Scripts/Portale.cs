@@ -6,7 +6,7 @@ public class Portale : Collidable
 {
     public string[] sceneNames;
 
-    protected override void OnCollide(Collider2D coll)
+    /*protected override void OnCollide(Collider2D coll)
     {
         if(coll.name=="Player")
         {
@@ -14,5 +14,17 @@ public class Portale : Collidable
             string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
             UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         }
+    }*/
+
+private void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            string sceneName = sceneNames[Random.Range(0, sceneNames.Length)];
+            UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
+
+        }
     }
+
+
 }

@@ -3631,7 +3631,7 @@ MonoBehaviour:
     minNormalAngle: 0
     maxNormalAngle: 0
   sceneNames:
-  - Dungeon 1
+  - Dungeon1
   - Sample Scene
 --- !u!61 &1240234193
 BoxCollider2D:
@@ -3643,7 +3643,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.025444552, y: 0.22900069}
