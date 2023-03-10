@@ -15,7 +15,9 @@ public class GameManager : MonoBehaviour {
         }
         
         instance=this;
-        //SceneManager.sceneLoaded += LoadState;
+        SceneManager.sceneLoaded += LoadState;
+        
+        //assicura che quando cambi scena il game manager resta:
         DontDestroyOnLoad(gameObject);
     }
 
@@ -35,26 +37,28 @@ public class GameManager : MonoBehaviour {
     //stato salvato
     public void SaveState() {
 
-        string s = "";
+        Debug.Log("SaveState");
+
+        /*string s = "";
 
         s += "0"+ "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
         s += "0";
 
-        PlayerPrefs.SetString("SaveState", s);
+        PlayerPrefs.SetString("SaveState", s);*/
     }
 
     //stato caricato
-    public void LoadState() {
+    public void LoadState(Scene s, LoadSceneMode mode) {
 
-        if(!PlayerPrefs.HasKey("SaveState"))
+       /* if(!PlayerPrefs.HasKey("SaveState"))
             return;
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
         pesos = int.Parse(data[1]);
-        experience = int.Parse(data[2]);
+        experience = int.Parse(data[2]);*/
 
         Debug.Log("LoadState");
     }
