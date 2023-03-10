@@ -1,22 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     private void Awake() {
-        
-        if(GameManager.instance != null) {
-            Destroy(gameObject);
-            return;
-        }
-
         instance = this;
-        SceneManager.sceneLoaded += LoadState;
-        DontDestroyOnLoad(gameObject);
-        
     }
 
     //Risorse
@@ -26,7 +16,7 @@ public class GameManager : MonoBehaviour
     public List<int> xpTable;
 
     //riferimenti (l'ho commentato perche altrimenti da errore sperando che dopo venga aggiustato)
-    public player player;
+    //public Player player;
 
     //logic
     public int pesos;
@@ -34,28 +24,10 @@ public class GameManager : MonoBehaviour
 
     //salva stato
     public void SaveState() {
-        string s = "";
-
-        s+= "0" + "|";
-        s+= pesos.ToString() + "|";
-        s+= experience.ToString() + "|";
-        s+= "0";
-
-        PlayerPrefs.SetString("SaveState", s);
+        Debug.Log("SaveState");
     }
 
-    public void LoadState(Scene s, LoadSceneMode mode) {
-
-        if(!PlayerPrefs.HasKey("SaveState"))
-            return;
-
-
-        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
-    
-        //change player skin
-        pesos= int.Parse(data[1]);   //pesos sarà uguale al valore finale della stringa
-        experience= int.Parse(data[2]);
-
+    public void LoadState() {
         Debug.Log("LoadState");
     }
 
