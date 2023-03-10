@@ -28,19 +28,9 @@ public class GameManager : MonoBehaviour
     //riferimenti (l'ho commentato perche altrimenti da errore sperando che dopo venga aggiustato)
     public player player;
 
-    //public weapon
-    public FloatingTextManager floatingTextManager;
-
     //logic
     public int pesos;
     public int experience;
-
-
-    //floating text
-    public void ShowText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration) {
-        floatingTextManager.Show(msg, fontSize, color, position, motion, duration);
-    }
-
 
     //salva stato
     public void SaveState() {
