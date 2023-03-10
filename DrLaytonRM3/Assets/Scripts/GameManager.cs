@@ -1,13 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
     
     public static GameManager instance;
     
     private void Awake() {
+        
+        if(GameManager.instance != null) {
+            Destroy(gameObject);
+            return;
+        }
+        
         instance=this;
+        //SceneManager.sceneLoaded += LoadState;
+        DontDestroyOnLoad(gameObject);
     }
 
     //risorse per il gioco
@@ -25,11 +34,28 @@ public class GameManager : MonoBehaviour {
 
     //stato salvato
     public void SaveState() {
-        Debug.Log("SaveState");
+
+        string s = "";
+
+        s += "0"+ "|";
+        s += pesos.ToString() + "|";
+        s += experience.ToString() + "|";
+        s += "0";
+
+        PlayerPrefs.SetString("SaveState", s);
     }
 
     //stato caricato
     public void LoadState() {
+
+        if(!PlayerPrefs.HasKey("SaveState"))
+            return;
+
+        string[] data = PlayerPrefs.GetString("SaveState").Split('|');
+
+        pesos = int.Parse(data[1]);
+        experience = int.Parse(data[2]);
+
         Debug.Log("LoadState");
     }
 
