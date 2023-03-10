@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Forziere : MonoBehaviour
 //public class Forziere : Collectable
@@ -35,7 +34,7 @@ public class Forziere : MonoBehaviour
             {
                 collected = true;
                 GetComponent<SpriteRenderer>().sprite = forziereVuoto;
-                GameManager.instance.ShowText("+" + contoMonete + "monete", 25, Color.yellow, transform.position, Vector3.up * 50, 3.0f);
+                Debug.Log("Guadagnato" + contoMonete + "monete!");
             }
         }
     }
