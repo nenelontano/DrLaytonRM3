@@ -6,6 +6,8 @@ public class Portale : Collidable
 {
     public string[] sceneNames;
 
+    
+
     /*protected override void OnCollide(Collider2D coll)
     {
         if(coll.name=="Player")

@@ -16,17 +16,17 @@ public class Forziere : MonoBehaviour
     }
     
 
-    // protected override void OnCollect()
-    // {
-    //     if(!collected)
-    //     {
-    //         collected = true;
-    //         GetComponent<SpriteRenderer>().sprite = forziereVuoto;
-    //         Debug.Log("Guadagnato" + contoMonete + "monete!");
-    //     }
-    // }
+ /*    protected override void OnCollect()
+        {
+         if(!collected)
+         {
+             collected = true;
+             GetComponent<SpriteRenderer>().sprite = forziereVuoto;
+             GameManager.instance.showText("+" +contoMonete+ "monete!",25,Color.yellow, transform.position,Vector3.up*50, 3.0f);
+         }
+     }*/
 
-    private void OnTriggerEnter2D(Collider2D other)
+  private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
@@ -34,7 +34,7 @@ public class Forziere : MonoBehaviour
             {
                 collected = true;
                 GetComponent<SpriteRenderer>().sprite = forziereVuoto;
-                Debug.Log("Guadagnato" + contoMonete + "monete!");
+                GameManager.instance.showText("+" +contoMonete+ "monete!",25,Color.yellow, transform.position,Vector3.up*50, 3.0f);
             }
         }
     }

@@ -30,9 +30,17 @@ public class GameManager : MonoBehaviour {
     //referenze
     public player player;
 
+    //public  weapon
+    public FloatingTextManager FloatingTextManager;
+
     //logica
     public int pesos;
     public int experience;
+
+    //floating text
+    public void showText(string msg, int fontSize, Color color, Vector3 position, Vector3 motion, float duration){
+        FloatingTextManager.Show(msg,fontSize,color,position,motion,duration);
+    }
 
     //stato salvato
     public void SaveState() {
