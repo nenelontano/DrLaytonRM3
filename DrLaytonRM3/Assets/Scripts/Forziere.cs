@@ -28,13 +28,13 @@ public class Forziere : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Fighter"))
         {
             if(!collected)
             {
                 collected = true;
                 GetComponent<SpriteRenderer>().sprite = forziereVuoto;
-                GameManager.instance.showText("+" +contoMonete+ "monete!",25,Color.yellow,transform.position,Vector3.up*50,3.0f);
+                //GameManager.instance.showText("+" +contoMonete+ "monete!",25,Color.yellow,transform.position,Vector3.up*50,3.0f);
             }
         }
     }
