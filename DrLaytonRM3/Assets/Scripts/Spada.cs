@@ -31,9 +31,9 @@ public class Spada : Collidable
     }
  }
 
-protected override void OnCollide(Collider2D coll){
-    if(coll.tag=="Fighter"){
-        if(coll.name=="Player")
+private void OnTriggerEnter2D(Collider2D other){
+    if(other.CompareTag("Fighter")){
+        if(other.name=="Player")
             return;
     
         //Create a new Damage object, then we'll send it to the fighter we've hit
@@ -43,7 +43,7 @@ protected override void OnCollide(Collider2D coll){
             pushForce=pushForce
         };
 
-        coll.SendMessage("ReceiveDamage", dmg);
+        other.SendMessage("ReceiveDamage", dmg);
     }
 }
 

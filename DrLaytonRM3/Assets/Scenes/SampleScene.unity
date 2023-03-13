@@ -3996,7 +3996,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.00077448785, y: 0.025557965}
@@ -4099,7 +4099,7 @@ MonoBehaviour:
   triggerLenght: 0.3
   chaseLenght: 1
   filter:
-    useTriggers: 0
+    useTriggers: 1
     useLayerMask: 0
     useDepth: 0
     useOutsideDepth: 0
