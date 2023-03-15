@@ -34,7 +34,7 @@ public class Forziere : MonoBehaviour
             {
                 collected = true;
                 GetComponent<SpriteRenderer>().sprite = forziereVuoto;
-                //GameManager.instance.showText("+" +contoMonete+ "monete!",25,Color.yellow,transform.position,Vector3.up*50,3.0f);
+                GameManager.instance.showText("+" +contoMonete+ "monete!",25,Color.yellow,transform.position,Vector3.up*50,3.0f);
             }
         }
     }

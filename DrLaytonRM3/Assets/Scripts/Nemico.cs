@@ -71,7 +71,7 @@ public class Nemico : Mover {
     
         Destroy(gameObject);
         GameManager.instance.experience += xpValue;
-        //GameManager.instance.showText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
+        GameManager.instance.showText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);
     }
 
 }
