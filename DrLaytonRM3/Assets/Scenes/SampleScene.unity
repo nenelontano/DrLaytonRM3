@@ -6112,7 +6112,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1673987282}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 615150394}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1673987282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6607,7 +6619,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88bb344d7710fe8488a1434818e35c46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSprites: []
+  playerSprites:
+  - {fileID: 690550714, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
+  - {fileID: 1420892521, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   weaponSprites:
   - {fileID: -1687073701, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   - {fileID: 1367933401, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
@@ -6621,8 +6635,8 @@ MonoBehaviour:
   player: {fileID: 1590313522}
   weapon: {fileID: 159297600}
   FloatingTextManager: {fileID: 1521207762}
-  pesos: 100
-  experience: 1
+  pesos: 0
+  experience: 0
 --- !u!4 &1800168834
 Transform:
   m_ObjectHideFlags: 0
@@ -35978,7 +35992,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1919683403}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 615150394}
+        m_TargetAssemblyTypeName: CharacterMenu, Assembly-CSharp
+        m_MethodName: OnArrowClick
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1919683403
 MonoBehaviour:
   m_ObjectHideFlags: 0

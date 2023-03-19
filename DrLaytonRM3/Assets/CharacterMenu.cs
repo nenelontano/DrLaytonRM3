@@ -39,6 +39,7 @@ public class CharacterMenu : MonoBehaviour
 
   public void OnSelectionChanged(){
     characterSelectionSprite.sprite=GameManager.instance.playerSprites[currentCharacterSelection];
+    GameManager.instance.player.SwapSprite(currentCharacterSelection);
   }
 
   //weapon upgrade
