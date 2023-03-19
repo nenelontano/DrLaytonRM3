@@ -30,7 +30,7 @@ public class GameManager : MonoBehaviour {
     //referenze
     public player player;
 
- //public  weapon
+    public  Spada weapon;
     public FloatingTextManager FloatingTextManager;
 
     //logica
@@ -42,31 +42,49 @@ public class GameManager : MonoBehaviour {
         FloatingTextManager.Show(msg,fontSize,color,position,motion,duration);
     }
 
+    //Upgrade Weapon
+    public bool TryUpgradeWeapon(){
+        //is the weapon max level?
+        if(weaponPrices.Count<=weapon.weaponLevel)
+            return false;
+
+        if(pesos>=weaponPrices[weapon.weaponLevel]){
+            pesos-=weaponPrices[weapon.weaponLevel];
+            weapon.UpgradeWeapon();
+            return true;
+        }    
+
+        return false;
+    }
     //stato salvato
     public void SaveState() {
 
-        Debug.Log("SaveState");
+        //Debug.Log("SaveState");
 
-        /*string s = "";
+        string s = "";
 
         s += "0"+ "|";
         s += pesos.ToString() + "|";
         s += experience.ToString() + "|";
-        s += "0";
+        s += weapon.weaponLevel.ToString();
 
-        PlayerPrefs.SetString("SaveState", s);*/
+        PlayerPrefs.SetString("SaveState", s);
     }
 
     //stato caricato
     public void LoadState(Scene s, LoadSceneMode mode) {
 
-       /* if(!PlayerPrefs.HasKey("SaveState"))
+        if(!PlayerPrefs.HasKey("SaveState"))
             return;
 
         string[] data = PlayerPrefs.GetString("SaveState").Split('|');
 
+        //Change player skin
         pesos = int.Parse(data[1]);
-        experience = int.Parse(data[2]);*/
+        experience = int.Parse(data[2]);
+
+        //change the weapon level
+        weapon.SetWeaponLevel(int.Parse(data[3]));
 
         Debug.Log("LoadState");
     }
