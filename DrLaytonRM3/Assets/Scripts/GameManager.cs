@@ -98,6 +98,7 @@ public class GameManager : MonoBehaviour {
     public void OnLevelUp() {
 
         Debug.Log("Level up!");
+        player.OnLevelUp();
     }
 
     //stato salvato
@@ -118,6 +119,7 @@ public class GameManager : MonoBehaviour {
     //stato caricato
     public void LoadState(Scene s, LoadSceneMode mode) {
 
+        Debug.Log("LoadState");
         if(!PlayerPrefs.HasKey("SaveState"))
             return;
 
@@ -125,12 +127,15 @@ public class GameManager : MonoBehaviour {
 
         //Change player skin
         pesos = int.Parse(data[1]);
+
+        //experience
         experience = int.Parse(data[2]);
+        if(GetCurrentLevel() != 1)
+            player.SetLevel(GetCurrentLevel());
 
         //change the weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
 
-        Debug.Log("LoadState");
     }
 
 }
