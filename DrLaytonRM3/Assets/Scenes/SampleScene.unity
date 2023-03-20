@@ -6631,7 +6631,7 @@ MonoBehaviour:
   - {fileID: 482938856, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   - {fileID: 854479114, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   weaponPrices: 1e0000004600000082000000c80000001301000090010000
-  xpTable: 
+  xpTable: 050000000a00000011000000190000001e0000002800000037000000460000005a00000078000000
   player: {fileID: 1590313522}
   weapon: {fileID: 159297600}
   FloatingTextManager: {fileID: 1521207762}
@@ -6645,7 +6645,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1800168832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.26962534, y: -0.06554022, z: -0.010948779}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
