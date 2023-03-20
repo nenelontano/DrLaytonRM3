@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour {
 
     //referenze
     public player player;
-
     public  Spada weapon;
     public FloatingTextManager FloatingTextManager;
 
@@ -56,6 +55,37 @@ public class GameManager : MonoBehaviour {
 
         return false;
     }
+
+    //Experience System
+    public int GetCurrentLevel() {
+    
+        int r = 0;
+        int add = 0;
+
+        while (experience >= add) {       //in base al valore di experience vediamo a che livello stiamo
+            add += xpTable[r];
+            r++;
+            
+            if(r == xpTable.Count)      //stiamo al livello massimo
+                return r;
+        }
+
+        return r;
+    }
+
+    public int GetXpToLevel(int level) {
+    
+        int r=0;
+        int xp=0;
+
+        while(r < level) {
+            xp += xpTable[r];
+            r++;
+        }
+
+        return xp;
+    }
+
     //stato salvato
     public void SaveState() {
 
