@@ -12,7 +12,7 @@ public class caffeGuarigione : Collidable {
 
     private void OnTriggerEnter2D(Collider2D coll) {
 
-        if(coll.CompareTag("Player"))
+        if(coll.name != "Player")
             return;
 
         if(Time.time - lastHeal > healCooldown) {
