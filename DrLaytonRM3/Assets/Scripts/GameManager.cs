@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour {
     public player player;
     public  Spada weapon;
     public FloatingTextManager FloatingTextManager;
+    public RectTransform hitpointBar;
 
     //logica
     public int pesos;
@@ -57,6 +58,15 @@ public class GameManager : MonoBehaviour {
 
         return false;
     }
+
+    //Hitpoint Bar
+    public void OnHitpointChange() {
+
+        float ratio = (float)player.hitpoint / (float)player.maxHitpoint;
+        hitpointBar.localScale = new Vector3(1, ratio, 1);
+    
+    }
+
 
     //Experience System
     public int GetCurrentLevel() {
