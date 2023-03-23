@@ -422,7 +422,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,6 +430,48 @@ TextureImporter:
       bones: []
       spriteID: f8e30bf02dc213246b2437f3ff01ab43
       internalID: -1628270704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cassa_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 139
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589713573ac698c4c8d7105b563f32ad
+      internalID: -669521381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cassa_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 155
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a48d0059a6886d45ac3c1cc37ae51d0
+      internalID: -783520029
       vertices: []
       indices: 
       edges: []
@@ -448,6 +490,7 @@ TextureImporter:
       spada_1: 1367933401
       Nemico_0: -1628270704
       muroSopra: 1387287602
+      cassa_0: -669521381
       muroNuovo0: -664011192
       andrea: 1420892521
       forzierepieno: 874203522
@@ -455,6 +498,7 @@ TextureImporter:
       spada_4: 1263724896
       cristian: 690550714
       spada_2: 1370640168
+      cassa_1: -783520029
       spada_5: 482938856
       forzierevuoto: 1123177097
       spada_3: 622811328
