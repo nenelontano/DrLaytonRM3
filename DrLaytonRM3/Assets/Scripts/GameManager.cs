@@ -13,14 +13,15 @@ public class GameManager : MonoBehaviour {
             Destroy(gameObject);
             Destroy(player.gameObject);
             Destroy(FloatingTextManager.gameObject);
+            Destroy(hud);
+            Destroy(menu);
             return;
         }
         
         instance=this;
         SceneManager.sceneLoaded += LoadState;
-        
-        //assicura che quando cambi scena il game manager resta:
-        DontDestroyOnLoad(gameObject);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+
     }
 
     //risorse per il gioco
@@ -34,6 +35,8 @@ public class GameManager : MonoBehaviour {
     public  Spada weapon;
     public FloatingTextManager FloatingTextManager;
     public RectTransform hitpointBar;
+    public GameObject hud;
+    public GameObject menu;
 
     //logica
     public int pesos;
@@ -111,12 +114,18 @@ public class GameManager : MonoBehaviour {
 
         Debug.Log("Level up!");
         player.OnLevelUp();
+        OnHitpointChange();
     }
+
+    //on scene loaded
+    public void OnSceneLoaded(Scene s, LoadSceneMode mode) {
+
+        player.transform.position=GameObject.Find("SpawnPoint").transform.position;
+    }
+
 
     //stato salvato
     public void SaveState() {
-
-        //Debug.Log("SaveState");
 
         string s = "";
 
@@ -131,7 +140,8 @@ public class GameManager : MonoBehaviour {
     //stato caricato
     public void LoadState(Scene s, LoadSceneMode mode) {
 
-        Debug.Log("LoadState");
+        SceneManager.sceneLoaded -= LoadState;
+
         if(!PlayerPrefs.HasKey("SaveState"))
             return;
 
@@ -147,9 +157,6 @@ public class GameManager : MonoBehaviour {
 
         //change the weapon level
         weapon.SetWeaponLevel(int.Parse(data[3]));
-
-
-        player.transform.position=GameObject.Find("SpawnPoint").transform.position;
     }
 
 }
