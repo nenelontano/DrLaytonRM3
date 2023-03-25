@@ -560,6 +560,48 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Boss_0
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6993728228ef306409a8158b619c9c2c
+      internalID: 373811162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e505846ea3126724b898e0226dff0039
+      internalID: -274018611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -572,6 +614,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       spada_1: 1367933401
+      Boss_0: 373811162
       cassasing0: 582548851
       Nemico_0: -1628270704
       muroSopra: 1387287602
@@ -590,6 +633,7 @@ TextureImporter:
       spada_5: 482938856
       forzierevuoto: 1123177097
       spada_3: 622811328
+      Enemy_1: -274018611
       spada_0: -1687073701
   spritePackingTag: 
   pSDRemoveMatte: 0
