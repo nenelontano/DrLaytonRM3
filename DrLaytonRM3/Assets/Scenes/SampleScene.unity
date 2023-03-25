@@ -245,7 +245,7 @@ MonoBehaviour:
   - 3.2
   - 3.6
   - 4
-  weaponLevel: 1
+  weaponLevel: 0
   SpriteRenderer: {fileID: 159297599}
 --- !u!61 &159297601
 BoxCollider2D:
@@ -6098,7 +6098,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 936379681
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 690550714, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -6352,7 +6352,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 936379681
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 1420892521, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
