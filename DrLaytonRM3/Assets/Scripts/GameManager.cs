@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour {
     public  Spada weapon;
     public FloatingTextManager FloatingTextManager;
     public RectTransform hitpointBar;
+    public Animator deathMenuAnim;
     public GameObject hud;
     public GameObject menu;
 
@@ -124,6 +125,13 @@ public class GameManager : MonoBehaviour {
     }
 
 
+    //DeathMenu and Respawn
+    public void Respawn(){
+        deathMenuAnim.SetTrigger("Hide");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
+        player.Respawn();
+    }
+    
     //stato salvato
     public void SaveState() {
 
