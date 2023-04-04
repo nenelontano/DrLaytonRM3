@@ -130,6 +130,7 @@ public class GameManager : MonoBehaviour {
         deathMenuAnim.SetTrigger("Hide");
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
         player.Respawn();
+       // PlayfabManager.SendLeaderboard(pesos);
     }
     
     //stato salvato

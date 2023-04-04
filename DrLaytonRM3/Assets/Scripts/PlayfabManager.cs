@@ -30,4 +30,20 @@ public class PlayfabManager : MonoBehaviour {
         Debug.Log("Error while logging in/creating account");
         Debug.Log(error.GenerateErrorReport());
     }
+
+   /* public void SendLeaderboard(int score){
+        var request= new UpdatePlayerStatisticsRequest{
+            Statistics= new List<StatisticUpdate>{
+                new StatisticUpdate{
+                    StatisticName="Score",
+                    Value=score
+                }
+            }
+        };
+        PlayFabClientAPI.UpdatePlayerStatistics(request,OnLeaderBoardUpdate,OnError);
+    }
+
+    void OnLeaderBoardUpdate(UpdatePlayerStatisticsResult result){
+        Debug.Log("Successfull leaderboard sent");
+    }*/
 }
