@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
+  m_Name: PlayFabEditorPrefsSO
+  m_EditorClassIdentifier: 
+  DevAccountEmail: irene.lontano@gmail.com
+  DevAccountToken: 5wej991rgsbcbphp3udj3fm8z4g6xnawibftayupgxe3o7inetwg9pecqysyg131m4ii5x81npkk11xawdhmpd8aa7j36cx1mscfn6j1heqecgkk756ohyw7rmdrdtcqd5xnetukym3euo45uo3n6rt7e97qouj9p8iq7d85g4jtm5fbgtkqq8ugy7uga1y3rt44rsom
+  AadAuthorization: 
+  SelectedStudio: University Invasion
+  SdkPath: Assets/PlayFabSDK
+  EdExPath: 
+  LocalCloudScriptPath: 
+  PanelIsShown: 0
+  curMainMenuIdx: 1
+  curSubMenuIdx: 0
