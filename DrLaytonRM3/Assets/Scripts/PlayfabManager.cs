@@ -5,6 +5,7 @@ using PlayFab;
 using PlayFab.ClientModels;
 
 public class PlayfabManager : MonoBehaviour {
+    public static PlayfabManager instance;
     
     // Start is called before the first frame update
    void Start() {
@@ -31,7 +32,7 @@ public class PlayfabManager : MonoBehaviour {
         Debug.Log(error.GenerateErrorReport());
     }
 
-   /* public void SendLeaderboard(int score){
+   public void SendLeaderboard(int score){
         var request= new UpdatePlayerStatisticsRequest{
             Statistics= new List<StatisticUpdate>{
                 new StatisticUpdate{
@@ -45,5 +46,5 @@ public class PlayfabManager : MonoBehaviour {
 
     void OnLeaderBoardUpdate(UpdatePlayerStatisticsResult result){
         Debug.Log("Successfull leaderboard sent");
-    }*/
+    }
 }
