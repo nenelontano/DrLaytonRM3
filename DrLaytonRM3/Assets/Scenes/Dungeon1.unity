@@ -2601,8 +2601,8 @@ GameObject:
   m_Component:
   - component: {fileID: 856859600}
   - component: {fileID: 856859603}
-  - component: {fileID: 856859602}
   - component: {fileID: 856859601}
+  - component: {fileID: 856859604}
   m_Layer: 0
   m_Name: Enemy_1 (1)
   m_TagString: Untagged
@@ -2651,40 +2651,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1632653, y: 0.12611954}
   m_EdgeRadius: 0
---- !u!114 &856859602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 856859599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28417e57bd6d4f14d9df9584a5b41dba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
-  pushRecoverySpeed: 0.2
-  ySpeed: 0.75
-  xSpeed: 1
-  xpValue: 1
-  triggerLenght: 1
-  chaseLenght: 5
-  filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!212 &856859603
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2724,7 +2690,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 936379681
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -274018611, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2737,6 +2703,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &856859604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856859599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b35a706e4f7e4645bc60f5b98d6e8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  damage: 1
+  pushForce: 5
 --- !u!1 &928310858
 GameObject:
   m_ObjectHideFlags: 0
@@ -11919,8 +11913,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1769594650}
   - component: {fileID: 1769594653}
-  - component: {fileID: 1769594652}
   - component: {fileID: 1769594651}
+  - component: {fileID: 1769594654}
   m_Layer: 0
   m_Name: Enemy_1
   m_TagString: Untagged
@@ -11969,40 +11963,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.1632653, y: 0.12081312}
   m_EdgeRadius: 0
---- !u!114 &1769594652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1769594649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28417e57bd6d4f14d9df9584a5b41dba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoint: 10
-  maxHitpoint: 10
-  pushRecoverySpeed: 0.2
-  ySpeed: 0.75
-  xSpeed: 1
-  xpValue: 1
-  triggerLenght: 1
-  chaseLenght: 5
-  filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!212 &1769594653
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12042,7 +12002,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 936379681
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -274018611, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12055,6 +12015,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1769594654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769594649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b35a706e4f7e4645bc60f5b98d6e8fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  damage: 1
+  pushForce: 5
 --- !u!1001 &1831732292
 PrefabInstance:
   m_ObjectHideFlags: 0

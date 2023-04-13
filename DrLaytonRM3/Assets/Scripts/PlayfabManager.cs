@@ -16,8 +16,8 @@ public class PlayfabManager : MonoBehaviour {
     void Login() {
         
         var request = new LoginWithCustomIDRequest {
-        CustomId = SystemInfo.deviceUniqueIdentifier,
-        CreateAccount = true
+            CustomId = SystemInfo.deviceUniqueIdentifier,
+            CreateAccount = true
         };
         PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);
     }
@@ -47,4 +47,23 @@ public class PlayfabManager : MonoBehaviour {
     void OnLeaderBoardUpdate(UpdatePlayerStatisticsResult result){
         Debug.Log("Successfull leaderboard sent");
     }
+
+    public void GetLeaderboard() {
+
+        var request = new GetLeaderboardRequest {
+            StatisticName = "experienceScore",
+            StartPosition = 0,
+            MaxResultsCount = 10
+        };
+        PlayFabClientAPI.GetLeaderboard(request, OnLeaderBoardGet, OnError);
+    }
+
+
+    void OnLeaderBoardGet(GetLeaderboardResult result) {
+    
+        foreach (var item in result.Leaderboard) {
+            Debug.Log(item.Position + "" + item.PlayFabId + "" + item.StatValue);
+        }
+    }
+
 }
