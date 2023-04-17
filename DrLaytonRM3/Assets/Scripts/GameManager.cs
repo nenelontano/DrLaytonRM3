@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour {
         deathMenuAnim.SetTrigger("Hide");
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
         player.Respawn();
-       PlayfabManager.instance.SendLeaderboard(experience);
+      // PlayfabManager.instance.SendLeaderboard(experience);
     }
     
     //stato salvato

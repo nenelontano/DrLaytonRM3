@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 
 public class PlayfabManager : MonoBehaviour {
-    public static PlayfabManager instance;
+    //public static PlayfabManager instance;
     
     [Header("UI")]
     public Text messageText;
