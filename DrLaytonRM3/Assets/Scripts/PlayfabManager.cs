@@ -3,49 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using PlayFab;
 using PlayFab.ClientModels;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;    inutile se non importi json dal sito di unity come fa vedere nel video 5
 using UnityEngine.UI;
 
 
 public class PlayfabManager : MonoBehaviour {
-    //public static PlayfabManager instance;
-    
+
+    //VARIABILI
+    //public static PlayfabManager instance;    non funziona 
     [Header("UI")]
     public Text messageText;
     public InputField emailInput;
     public InputField passwordInput;
 
-    public void RegisterButton() {
-        var request = new RegisterPlayFabUserRequest {
-            Email = emailInput.text,
-            Password = passwordInput.text,
-            RequireBothUsernameAndEmail = false
-        };
-        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
-    }
-
-    void OnRegisterSuccess(RegisterPlayFabUserResult result) {
-        messageText.text = "Registered and logged in";
-    }
-
-    public void LoginButton() {
-    
-    }
-
-    public void ResetPasswordButton() {
-    
-    }
 
 
-    void OnPasswordReset(SendAccountRecoveryEmailResult result) {
-
-    }
-
-
+    //LOGIN INIZIALE
     // Start is called before the first frame update
-   void Start() {
+    void Start() {
         Login();
-   }
+    }
    
     void Login() {
         
@@ -60,13 +37,14 @@ public class PlayfabManager : MonoBehaviour {
         Debug.Log("Successful login/account create");
     }
 
-    // Update is called once per frame
-    void OnError(PlayFabError error)  {
-        Debug.Log("Error while logging in/creating account");
-        Debug.Log(error.GenerateErrorReport());
-    }
 
-   public void SendLeaderboard(int score){
+
+
+
+
+
+    //CLASSIFICA
+    public void SendLeaderboard(int score){
         var request= new UpdatePlayerStatisticsRequest{
             Statistics= new List<StatisticUpdate>{
                 new StatisticUpdate{
@@ -100,4 +78,48 @@ public class PlayfabManager : MonoBehaviour {
         }
     }
 
+
+
+
+
+    //OPERAZIONI DI SIGN IN
+    public void RegisterButton() {
+        var request = new RegisterPlayFabUserRequest {
+            Email = emailInput.text,
+            Password = passwordInput.text,
+            RequireBothUsernameAndEmail = false
+        };
+        PlayFabClientAPI.RegisterPlayFabUser(request, OnRegisterSuccess, OnError);
+    }
+
+    void OnRegisterSuccess(RegisterPlayFabUserResult result) {
+        messageText.text = "Registered and logged in";
+    }
+
+    public void LoginButton() {
+    
+    }
+
+    public void ResetPasswordButton() {
+    
+    }
+
+
+    void OnPasswordReset(SendAccountRecoveryEmailResult result) {
+
+    }
+
+
+
+
+
+
+    //FUNZIONI USATE
+   // Update is called once per frame
+    void OnError(PlayFabError error)  {
+        Debug.Log("Error while logging in/creating account");
+        Debug.Log(error.GenerateErrorReport());
+    }
+
+  
 }
