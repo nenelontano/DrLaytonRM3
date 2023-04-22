@@ -30,10 +30,12 @@ public class PlayfabManager : MonoBehaviour {
             CustomId = SystemInfo.deviceUniqueIdentifier,
             CreateAccount = true
         };
-        PlayFabClientAPI.LoginWithCustomID(request, OnSuccess, OnError);
+        PlayFabClientAPI.LoginWithCustomID(request, OnLoginSuccess, OnError);
     }
 
-    void OnSuccess(LoginResult result) {
+    void OnLoginSuccess(LoginResult result) {
+        //messageText.text = "Logged in;     non la usiamo perche abbiamo salato il video dove fa comparire i messaggi
+        Debug.Log("Logged in");
         Debug.Log("Successful login/account create");
     }
 
@@ -84,6 +86,12 @@ public class PlayfabManager : MonoBehaviour {
 
     //OPERAZIONI DI SIGN IN
     public void RegisterButton() {
+        if(passwordInput.text.Length < 6) {
+            Debug.Log("Password troppo corta");
+            //messageText.text = "Password troppo corta";               //inutile perche abbiamo saltato la parte delle condizioni sulla password
+            return;
+        }                 
+
         var request = new RegisterPlayFabUserRequest {
             Email = emailInput.text,
             Password = passwordInput.text,
@@ -93,20 +101,27 @@ public class PlayfabManager : MonoBehaviour {
     }
 
     void OnRegisterSuccess(RegisterPlayFabUserResult result) {
-        messageText.text = "Registered and logged in";
+        Debug.Log("Registered and logged in");
+        //messageText.text = "Registered and logged in";
     }
 
     public void LoginButton() {
-    
+        var request = new LoginWithEmailAddressRequest {
+            Email = emailInput.text,
+            Password = passwordInput.text,
+        };
+        PlayFabClientAPI.LoginWithEmailAddress(request, OnLoginSuccess, OnError);
     }
 
     public void ResetPasswordButton() {
-    
+        var request = new SendAccountRecoveryEmailRequest {
+            Email = emailInput.text,
+            TitleId = "2087F"
+        };
+        PlayFabClientAPI.SendAccountRecoveryEmail(request, OnPasswordReset, OnError);
     }
-
-
     void OnPasswordReset(SendAccountRecoveryEmailResult result) {
-
+        Debug.Log("Password reset mail sent");
     }
 
 
@@ -117,6 +132,7 @@ public class PlayfabManager : MonoBehaviour {
     //FUNZIONI USATE
    // Update is called once per frame
     void OnError(PlayFabError error)  {
+        //messageText.text = error.ErrorMessage;     non la usiamo perche abbiamo salato il video dove fa comparire i messaggi
         Debug.Log("Error while logging in/creating account");
         Debug.Log(error.GenerateErrorReport());
     }
