@@ -16,6 +16,10 @@ public class PlayfabManager : MonoBehaviour {
     public InputField emailInput;
     public InputField passwordInput;
 
+    //video design online leaderboard
+    public GameObject rowPrefab;
+    public Transform rowsParent;
+
 
 
     //LOGIN INIZIALE
@@ -74,9 +78,22 @@ public class PlayfabManager : MonoBehaviour {
 
 
     void OnLeaderBoardGet(GetLeaderboardResult result) {
+
+        foreach(Transform item in rowsParent) {
+            Destroy(item.gameObject);
+        }
     
         foreach (var item in result.Leaderboard) {
-            Debug.Log(item.Position + "" + item.PlayFabId + "" + item.StatValue);
+
+            //video design online leaderboard
+            GameObject newGo = Instantiate(rowPrefab, rowsParent);
+            Text[] texts = newGo.GetComponentsInChildren<Text>();
+            texts[0].text = (item.Position + 1).ToString();
+            texts[1].text = item.PlayFabId;
+            texts[2].text = item.StatValue.ToString();
+
+            Debug.Log(string.Format("PLACE: {0} | ID: {1} | VALUE: {2}",
+            item.Position, item.PlayFabId, item.StatValue));
         }
     }
 
