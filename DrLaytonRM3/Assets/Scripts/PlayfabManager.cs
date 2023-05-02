@@ -10,7 +10,7 @@ using UnityEngine.UI;
 public class PlayfabManager : MonoBehaviour {
 
     //VARIABILI
-    //public static PlayfabManager instance;    non funziona 
+    public static PlayfabManager instance;    //non funziona 
     [Header("UI")]
     public Text messageText;
     public InputField emailInput;
