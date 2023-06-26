@@ -125,6 +125,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -1208,7 +1220,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1216,6 +1228,216 @@ TextureImporter:
       bones: []
       spriteID: 51b854019c8b4fa44a4b2719a92bdc80
       internalID: -462355786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavagna0
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 649
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21c63e58e11e1f6419c7a8ae6955fa48
+      internalID: -1380189593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavagna2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 649
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457dbbe74d27dcc468a949e7cfa562e9
+      internalID: 446646562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavagna1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 665
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dedeff1111ede64fb92376d43b2bec6
+      internalID: 1825951266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lavagna 4
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 665
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f4f06de10235846a1fd7128862c22e
+      internalID: -896698272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macc2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 453
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e03162e057d3b2a46bfc1c68dab02db8
+      internalID: -139177040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macc5
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 437
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a421caabec436e418271443a0562f57
+      internalID: -1062856173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macc4
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 437
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1520f41eb803b334c8fe5a485e96ed8d
+      internalID: 1585661327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macc3
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 453
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b320e39aa44973a43ba37a43ee8c4ac0
+      internalID: 1272463988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macc0
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 469
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0817c2cc1b3f0242b8933cc43d472be
+      internalID: 460620051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: macc1
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 469
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584335b9f53f8994183321d2ec2541de
+      internalID: -358997995
       vertices: []
       indices: 
       edges: []
@@ -1232,8 +1454,13 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Modern_Office_16x16_2: -591422494
+      macc1: -358997995
       muro14: -420026690
+      lavagna0: -1380189593
+      lavagna1: 1825951266
       scrivania2: -2134617367
+      lavagna 4: -896698272
+      macc4: 1585661327
       muro1: 893521865
       quadro2: 1516594096
       scala0: 684148988
@@ -1245,12 +1472,15 @@ TextureImporter:
       mobile1: -279940890
       muro_0: -718558375
       computer0: 608455973
+      macc2: -139177040
+      macc0: 460620051
       computer1: -1384003068
       menu_0: -462355786
       muro3: 1786714540
       muro9: -1061209170
       muro16: -599480529
       fontana1: 1610563907
+      lavagna2: 446646562
       muro15: -908714461
       muro10: -286012558
       muro13: 1374967407
@@ -1271,6 +1501,7 @@ TextureImporter:
       scrivania_0: 686064398
       fontana3: 303673129
       scrivania1: -1557844927
+      macc3: 1272463988
       scriv_1.3 giusto: -1352344743
       sedia1: -175844208
       muro8: 2143871442
@@ -1283,6 +1514,7 @@ TextureImporter:
       pav2: 588669881
       quadro1: -1984533282
       fontana2: -2070506882
+      macc5: -1062856173
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
