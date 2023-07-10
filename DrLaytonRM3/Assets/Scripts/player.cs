@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class player : Mover {
     
+    
+  //  public Joystick joystick;
+
     private SpriteRenderer spriteRenderer;
     private bool isAlive=true;
+
+    
+/*void Update(){
+    horizontalMove=joystick.Horizontal*runSpeed;
+}*/
     protected override void Start(){
         base.Start();
         spriteRenderer=GetComponent<SpriteRenderer>();
