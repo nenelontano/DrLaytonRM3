@@ -715,6 +715,7 @@ MonoBehaviour:
   hitpoint: 10
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
+  joystick: {fileID: 0}
   ySpeed: 0.375
   xSpeed: 0.5
   xpValue: 10
