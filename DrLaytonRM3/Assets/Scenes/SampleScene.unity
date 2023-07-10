@@ -8817,8 +8817,8 @@ MonoBehaviour:
   maxHitpoint: 10
   pushRecoverySpeed: 0.2
   joystick: {fileID: 1610038006}
-  ySpeed: 0.75
-  xSpeed: 1
+  ySpeed: 0.5
+  xSpeed: 0.5
 --- !u!1001 &1610038004
 PrefabInstance:
   m_ObjectHideFlags: 0
