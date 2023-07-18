@@ -13,8 +13,11 @@ public class Fighter : MonoBehaviour
     protected float immuneTime=1.0f;
     protected float lastImmune;
 
+ 
+
     //push
     protected Vector3 pushDirection;
+
 
     //all fighters can receiveDamage/die
     protected virtual void ReceiveDamage(Damage dmg){
@@ -31,6 +34,7 @@ public class Fighter : MonoBehaviour
             }
         }
     }
+
 
     protected virtual void Death(){
 

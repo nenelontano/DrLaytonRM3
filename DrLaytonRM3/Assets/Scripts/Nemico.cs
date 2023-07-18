@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Nemico : Mover {
+public class Nemico : MoverNemico {
     
     //experience
     public int xpValue=1;

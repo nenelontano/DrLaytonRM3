@@ -8681,6 +8681,7 @@ MonoBehaviour:
   hitpoint: 5
   maxHitpoint: 5
   pushRecoverySpeed: 0.2
+  Joystick: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252, type: 3}
   ySpeed: 0.75
   xSpeed: 1
 --- !u!61 &1590313523

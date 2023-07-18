@@ -2,8 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class Mover : Fighter {
-    public FixedJoystick Joystick;
+public abstract class MoverNemico : Fighter {
+    
     private Vector3 originalSize;
     protected BoxCollider2D boxCollider;
     protected Vector3 moveDelta;
@@ -21,7 +21,7 @@ public abstract class Mover : Fighter {
     protected virtual void UpdateMotor(Vector3 input) {
     
         //Reset MoveDelta
-        moveDelta= new Vector3( Joystick.Horizontal* xSpeed, Joystick.Vertical * ySpeed, 0);
+        moveDelta= new Vector3(input.x * xSpeed, input.y * ySpeed, 0);
 
         //Swap sprite directions 
         if(moveDelta.x > 0)
