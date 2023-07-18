@@ -13,14 +13,8 @@ public class Fighter : MonoBehaviour
     protected float immuneTime=1.0f;
     protected float lastImmune;
 
-  //  public Joystick joystick;
-
     //push
     protected Vector3 pushDirection;
-
-/*void Update(){
-    horizontalMove=joystick.Horizontal*runSpeed;
-}*/
 
     //all fighters can receiveDamage/die
     protected virtual void ReceiveDamage(Damage dmg){
@@ -37,7 +31,6 @@ public class Fighter : MonoBehaviour
             }
         }
     }
-
 
     protected virtual void Death(){
 
