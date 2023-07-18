@@ -407,6 +407,46 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fcdab9d824eebcc4a90deeaa09dc6585, type: 3}
+--- !u!1 &160515374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8410343809512617253, guid: fcdab9d824eebcc4a90deeaa09dc6585, type: 3}
+  m_PrefabInstance: {fileID: 160515373}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &160515375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 160515374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28417e57bd6d4f14d9df9584a5b41dba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitpoint: 3
+  maxHitpoint: 3
+  pushRecoverySpeed: 0.2
+  joystick: {fileID: 0}
+  ySpeed: 0.75
+  xSpeed: 1
+  xpValue: 1
+  triggerLenght: 0.3
+  chaseLenght: 1
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
 --- !u!1 &207088373
 GameObject:
   m_ObjectHideFlags: 0
