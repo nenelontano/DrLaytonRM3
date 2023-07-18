@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8410343809512617254}
   - component: {fileID: 8410343809512617255}
   - component: {fileID: 8410343809512617252}
-  - component: {fileID: 8410343809512617257}
   m_Layer: 0
   m_Name: SmallEnemy
   m_TagString: Fighter
@@ -74,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 936379681
-  m_SortingLayer: 2
+  m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: -1628270704, guid: 731af296015ca1b4b80d1b18bcc174d2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -113,38 +112,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.09959024, y: 0.09029645}
   m_EdgeRadius: 0
---- !u!114 &8410343809512617257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8410343809512617253}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28417e57bd6d4f14d9df9584a5b41dba, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitpoint: 3
-  maxHitpoint: 3
-  pushRecoverySpeed: 0.2
-  xpValue: 1
-  triggerLenght: 0.3
-  chaseLenght: 1
-  filter:
-    useTriggers: 1
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!1 &8410343810290829828
 GameObject:
   m_ObjectHideFlags: 0
