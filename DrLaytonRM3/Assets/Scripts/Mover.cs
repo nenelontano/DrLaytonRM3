@@ -23,7 +23,6 @@ public abstract class Mover : Fighter {
     
         //Reset MoveDelta
         moveDelta= new Vector3(joystick.Horizontal * xSpeed, joystick.Vertical* ySpeed, 0);
-         GameManager.instance.SaveState();
 
         //Swap sprite directions 
         if(moveDelta.x > 0)
