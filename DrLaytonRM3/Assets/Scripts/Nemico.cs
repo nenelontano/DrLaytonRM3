@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Nemico : MoverNemico {
     
+    [SerializeField] private AudioSource nemicoSoundEffect;
     //experience
     public int xpValue=1;
 
@@ -68,7 +69,7 @@ public class Nemico : MoverNemico {
     }
 
     protected override void Death() {
-    
+        nemicoSoundEffect.Play();
         Destroy(gameObject);
         GameManager.instance.GrantXp(xpValue);
         GameManager.instance.showText("+" + xpValue + "xp", 30, Color.magenta, transform.position, Vector3.up * 40, 1.0f);

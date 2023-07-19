@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class caffeGuarigione : Collidable {
     
+    [SerializeField] private AudioSource vitaSoundEffect;
     public int healingAmount = 1;
 
     private float healCooldown = 1.0f;
@@ -11,7 +12,7 @@ public class caffeGuarigione : Collidable {
 
 
     private void OnTriggerEnter2D(Collider2D coll) {
-
+        vitaSoundEffect.Play();
         if(coll.name != "Player")
             return;
 

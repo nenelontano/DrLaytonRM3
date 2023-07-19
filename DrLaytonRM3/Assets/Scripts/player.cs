@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class player : Mover {
     
+    [SerializeField] private AudioSource deathSoundEffect;
     private SpriteRenderer spriteRenderer;
     private bool isAlive=true;
     protected override void Start(){
@@ -20,6 +21,8 @@ public class player : Mover {
     }
 
 protected override void Death(){
+    
+    deathSoundEffect.Play();
     isAlive=false;
     GameManager.instance.deathMenuAnim.SetTrigger("Show");
 }

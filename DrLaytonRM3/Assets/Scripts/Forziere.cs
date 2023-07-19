@@ -5,6 +5,7 @@ using UnityEngine;
 public class Forziere : MonoBehaviour
 //public class Forziere : Collectable
 {
+    [SerializeField] private AudioSource collectionSoundEffect;
     public Sprite forziereVuoto;
     public int contoMonete = 5;
     private bool collected;
@@ -32,6 +33,7 @@ public class Forziere : MonoBehaviour
         {
             if(!collected)
             {
+                collectionSoundEffect.Play();
                 collected = true;
                 GetComponent<SpriteRenderer>().sprite = forziereVuoto;
                 GameManager.instance.pesos+=contoMonete;

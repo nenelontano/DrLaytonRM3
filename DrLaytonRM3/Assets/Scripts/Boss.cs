@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Boss : Nemico
 {
+   
     public float[] fireballSpeed={2.5f,-2.5f};
     public float distance=0.25f;
     public Transform[] fireballs;
