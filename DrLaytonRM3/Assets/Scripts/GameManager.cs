@@ -130,7 +130,8 @@ public class GameManager : MonoBehaviour {
         deathMenuAnim.SetTrigger("Hide");
         UnityEngine.SceneManagement.SceneManager.LoadScene("SampleScene");
         player.Respawn();
-      PlayfabManager.instance.SendLeaderboard(pesos);
+        //commento per provare se mi elimna un errore quando facciamo il restart, tanto a priori la classifica non funziona
+        PlayfabManager.instance.SendLeaderboard(pesos);
     }
     
     //stato salvato
