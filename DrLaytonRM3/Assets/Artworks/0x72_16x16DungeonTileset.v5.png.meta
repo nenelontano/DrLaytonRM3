@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 99
+  spritePixelsToUnits: 98
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -590,7 +590,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,48 +598,6 @@ TextureImporter:
       bones: []
       spriteID: e505846ea3126724b898e0226dff0039
       internalID: -274018611
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 0x72_16x16DungeonTileset.v5_1
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 95
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bb3c1eb87533fce4c905f2bc330864cf
-      internalID: 1438078519
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: nemico_inizio
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 64
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22b905a3910680a49b88a914ffcc6f16
-      internalID: -1011208551
       vertices: []
       indices: 
       edges: []
@@ -660,7 +618,6 @@ TextureImporter:
       cassasing0: 582548851
       Nemico_0: -1628270704
       muroSopra: 1387287602
-      0x72_16x16DungeonTileset.v5_1: 1438078519
       cassa_0: -669521381
       muroNuovo0: -664011192
       andrea: 1420892521
@@ -678,7 +635,6 @@ TextureImporter:
       spada_3: 622811328
       Enemy_1: -274018611
       spada_0: -1687073701
-      nemico_inizio: -1011208551
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

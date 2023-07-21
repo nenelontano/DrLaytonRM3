@@ -60,7 +60,7 @@ protected override void Death(){
         if(hitpoint > maxHitpoint)
             hitpoint = maxHitpoint;
            
-        GameManager.instance.showText("+" + healingAmount.ToString() + "up", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
+        GameManager.instance.showText("+" + healingAmount.ToString() + "hp", 25, Color.green, transform.position, Vector3.up * 30, 1.0f);
         GameManager.instance.OnHitpointChange();
     }
 
