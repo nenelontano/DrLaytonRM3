@@ -80237,6 +80237,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 219477730}
     m_Modifications:
     - target: {fileID: 3091971676923142734, guid: 40d7998567b289e41810cf967bef2493, type: 3}
+      propertyPath: contoMonete
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3091971676923142734, guid: 40d7998567b289e41810cf967bef2493, type: 3}
       propertyPath: collectionSoundEffect
       value: 
       objectReference: {fileID: 1831732295}
